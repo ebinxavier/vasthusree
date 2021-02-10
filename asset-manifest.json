@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vasthusree/static/css/main.98178f2b.chunk.css",
-    "main.js": "/vasthusree/static/js/main.5d6b1dc5.chunk.js",
-    "main.js.map": "/vasthusree/static/js/main.5d6b1dc5.chunk.js.map",
+    "main.js": "/vasthusree/static/js/main.86843460.chunk.js",
+    "main.js.map": "/vasthusree/static/js/main.86843460.chunk.js.map",
     "runtime-main.js": "/vasthusree/static/js/runtime-main.f4ba362d.js",
     "runtime-main.js.map": "/vasthusree/static/js/runtime-main.f4ba362d.js.map",
     "static/css/2.ada51479.chunk.css": "/vasthusree/static/css/2.ada51479.chunk.css",
     "static/js/2.aea1571c.chunk.js": "/vasthusree/static/js/2.aea1571c.chunk.js",
     "static/js/2.aea1571c.chunk.js.map": "/vasthusree/static/js/2.aea1571c.chunk.js.map",
     "index.html": "/vasthusree/index.html",
-    "precache-manifest.5b34e25bdba4df68a538da98ce9c88f4.js": "/vasthusree/precache-manifest.5b34e25bdba4df68a538da98ce9c88f4.js",
+    "precache-manifest.f1778c0efabcfe8cc5594131e9c62278.js": "/vasthusree/precache-manifest.f1778c0efabcfe8cc5594131e9c62278.js",
     "service-worker.js": "/vasthusree/service-worker.js",
     "static/css/2.ada51479.chunk.css.map": "/vasthusree/static/css/2.ada51479.chunk.css.map",
     "static/css/main.98178f2b.chunk.css.map": "/vasthusree/static/css/main.98178f2b.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.ada51479.chunk.css",
     "static/js/2.aea1571c.chunk.js",
     "static/css/main.98178f2b.chunk.css",
-    "static/js/main.5d6b1dc5.chunk.js"
+    "static/js/main.86843460.chunk.js"
   ]
 }
