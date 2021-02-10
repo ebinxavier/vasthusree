@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  bgColorDarker,
   textColorPrimary,
   textColorSecondary,
 } from "../../constants";
@@ -11,7 +10,6 @@ const Footer = () => {
     <div
       style={{
         textAlign: "center",
-        background: bgColorDarker,
         padding: 50,
         color: textColorSecondary,
       }}
@@ -27,14 +25,14 @@ const Footer = () => {
         AROUND THE WEB
       </div>
       <SocialIcons />
-      <div>Ebin Xavier</div>
+      <div>Vasthu Sree</div>
       <div>
         Email:{" "}
         <a
-          href="mailto:ebinx7@gmail.com"
+          href="mailto:vasthusree@gmail.com"
           style={{ textDecoration: "none", color: textColorPrimary }}
         >
-          ebinx7@gmail.com
+          vasthusree@gmail.com
         </a>
         {", "}Mobile:{" "}
         <a
@@ -44,7 +42,7 @@ const Footer = () => {
           +91-8089578001
         </a>
       </div>
-      <div>© {new Date().getFullYear()}, Made with ❤️</div>
+      {/* <div>© {new Date().getFullYear()}, Made with ❤️</div> */}
     </div>
   );
 };

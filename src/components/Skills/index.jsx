@@ -6,6 +6,7 @@ import {
   textColorSecondary,
 } from "../../constants";
 import Hyphen from "../Hyphen";
+import Map from "../Map";
 import SkillList from "./components/skillList";
 
 const technologies = [
@@ -149,20 +150,21 @@ const Skills = () => {
     >
       <Container>
         <div style={{ fontSize: 15, color: textColorPrimary }}>
-          <Hyphen /> MY SKILLS
+          <Hyphen /> OUR SERVICES
         </div>
         <div
           style={{ fontSize: 35, marginBottom: 25, color: textColorPrimary }}
         >
-          Technologies
+          Vasthu
         </div>
         <SkillList items={technologies} />
         <div
           style={{ fontSize: 35, marginBottom: 25, color: textColorPrimary }}
         >
-          Miscellaneous
+          Construction Contracts
         </div>
         <SkillList items={miscellaneous} />
+        <Map/>
       </Container>
     </div>
   );

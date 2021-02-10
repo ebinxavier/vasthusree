@@ -18,12 +18,12 @@ const Header = () => {
                   fontSize: 25,
                 }}
               >
-                Portfolio
+                Vasthu Sree
               </span>
             </Col>
-            <Col md="6" style={{ padding: isMobile ? "15px 0" : 20 }}>
+            {/* <Col md="6" style={{ padding: isMobile ? "15px 0" : 20 }}>
               <Menu />
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       ) : (

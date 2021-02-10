@@ -3,67 +3,30 @@ import React from "react";
 import { textColorPrimary, textColorSecondary } from "../../../constants";
 import Hyphen from "../../Hyphen";
 import * as Scroll from "react-scroll";
-import DownloadCV from "../../DownloadCV";
 
 const Writings = () => {
   return (
-    <Scroll.Element name="knowMore" offset={100}>
+    <Scroll.Element name="knowMore" offset={200}>
       <div style={{ color: textColorSecondary }}>
         <div style={{ fontSize: 15, color: textColorPrimary }}>
-          <Hyphen /> ABOUT ME
+          <Hyphen /> ABOUT US
         </div>
         <div
           style={{ fontSize: 35, marginBottom: 25, color: textColorPrimary }}
         >
-          Who Am I
+          Who We Are
         </div>
         <div>
           <p>
-            I am a Software Engineer from Kochi, India. I am having{" "}
-            {new Date().getFullYear() - 2016}+ years of experience in the
-            software industry. I have a bachelor's degree in{" "}
-            <b>Computer Science and Engineering</b> from{" "}
-            <b>Cochin University of Science and Technologies</b>. My area of
-            expertise is web development. I am interested in both frontend and
-            backend technologies but most of my experience lies on frontend
-            development.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <p>
-            I started my career as a programmer analyst (an entry level
-            engineer) at <b>Cognizant</b>. From there I got an industrial
-            exposure to software development especially to web development. I
-            worked there on
-            <b> Angular.js, HTML and CSS</b>. Then I got some projects in{" "}
-            <b>Node.js</b> and it opened the world of server side programming to
-            me. After a couple of years I moved to another company <b>QBurst</b>{" "}
-            as an intermediate level frontend engineer. There I worked on{" "}
-            <b>Angular 2+ and Material UI</b>, also I got a chance to work with
-            Selenium web driver using Node.js to automate some tasks.
-            Fortunately I got an opportunity to work with
-            <b> React.js</b> which made me fall in love with React. I did a
-            bunch of projects on this awesome tech.
+          Velit aliquet sagittis id consectetur. Elit sed vulputate mi sit. Gravida in fermentum et sollicitudin. Neque aliquam vestibulum morbi blandit cursus risus at. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Vulputate odio ut enim blandit volutpat. Lobortis scelerisque fermentum dui faucibus in ornare quam. Mi proin sed libero enim. Scelerisque felis imperdiet proin fermentum. Ultrices vitae auctor eu augue ut lectus.
           </p>
           <p>
-            After a year I got a job offer from <b>Datalkz</b>, a Dubai based
-            start-up company. I am currently working here. They hired me not
-            only because I am a React developer, but I knew <b>Three.js</b>{" "}
-            which is an awesome javascript library to visualize 3D models on the
-            web. From Datalkz I learned a lot. This is the first time I am
-            working for a start-up. The work culture, attitude to time
-            constrained product delivery everything was different for me. I
-            learned <b>GraphQL, Next.js, Docker, Redis</b> and much more from
-            Datalkz. Still continuing my journey on Datalkz.
-          </p>
-          <p>
-            I am always interested in making things, sometimes it may not be
-            software at all. I love music production, making different cuisines,
-            making games, I always keep an eye on theoretical physics and
-            science, making electronic projects using microcontrollers like
-            ESP32, Arduino, Raspberry Pi (which is not a microcontroller by the
-            way ) and my life is an experiment <span role="img">🤯</span>.
+          Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Mi eget mauris pharetra et. Mollis aliquam ut porttitor leo a diam. Arcu non sodales neque sodales ut etiam sit amet. Scelerisque in dictum non consectetur a erat nam at. Nunc non blandit massa enim nec dui nunc. Accumsan tortor posuere ac ut. Amet justo donec enim diam vulputate. Massa eget egestas purus viverra accumsan in. Risus nullam eget felis eget nunc.
           </p>
         </div>
-        <DownloadCV />
       </div>
     </Scroll.Element>
   );

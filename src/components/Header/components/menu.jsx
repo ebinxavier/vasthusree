@@ -14,7 +14,7 @@ const Menu = () => {
   const items = [
     { name: "Home", path: "/" },
     // { name: "About", path: "/about" },
-    { name: "Resume", path: "/resume" },
+    // { name: "Resume", path: "/resume" },
     { name: "Projects", path: "/projects" },
     // { name: "Contact", path: "/contact" },
   ];

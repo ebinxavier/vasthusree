@@ -7,49 +7,44 @@ import {
   textColorSecondary,
 } from "../constants";
 import { isMobile } from "react-device-detect";
-import { Col, Row } from "react-bootstrap";
-import Button from "../components/Button";
+import { Col, Container, Row } from "react-bootstrap";
+import Hyphen from "../components/Hyphen";
 
 const projects = [
   {
-    name: "Rubik's Cube Simulator",
+    name: "House 1",
     desc:
-      "This is a 3D simulation of NxN rubik's cube. You can scramble the cube and solve like a normal rubik's cube.",
-    liveDemo: "https://ebinxavier.github.io/rubiksCube",
-    repo: "https://github.com/ebinxavier/rubiksCube",
-    category: "Game / Puzzle",
-    technologies: ["Vanilla.js", "Three.js"],
-    icon: "/images/projectIcons/rubiks.png",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    category: "Traditional Kerala Style",
+    services: ["Vasthu","3D elivation"],
+    icon: "/images/projectIcons/i1.jpg",
   },
   {
-    name: "Chain Reaction Online",
+    name: "House 2",
     desc:
-      "This is a Multiplayer board game. It support 8 players at a time.You can create rooms and invite your friends. ",
-    liveDemo: "http://chain-game.herokuapp.com/",
-    repo: "https://github.com/ebinxavier/chainReactionIonic",
-    category: "Multiplayer Game",
-    technologies: ["React.js", "Three.js", "Ionic"],
-    icon: "/images/projectIcons/chainReaction.png",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    category:"Traditional Kerala Style",
+    services: ["Vasthu","3D elivation"],
+    icon: "/images/projectIcons/i2.jpg",
   },
   {
-    name: "Sudoku Solver",
+    name: "House 3",
     desc:
-      "This is an implementation of Backtracking algorithm to solve Sudoku. It also provide random puzzles to solve.",
-    liveDemo: "https://ebinxavier.github.io/sudoku-solver/",
-    repo: "https://github.com/ebinxavier/sudoku-solver",
-    category: "Game / Puzzle",
-    technologies: ["Vanilla.js", "Backtracking", "Dynamic Programming"],
-    icon: "/images/projectIcons/sudoku.png",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    category:"Traditional Kerala Style",
+    services: ["Vasthu","3D elivation"],
+    icon: "/images/projectIcons/i4.jpg",
   },
 ];
 
-const reDirectTo = (link) => {
-  window.open(link);
-};
-
 const Projects = () => {
   return (
-    <div>
+    <div style={{minHeight:500}}>
+      <Container>
+        <div style={{color:"white", padding: "30px 0", display:"block"}}>
+          <Hyphen /> OUR PROJECTS
+        </div>
+</Container>
       <Carousel
         showStatus={false}
         swipeable
@@ -59,6 +54,7 @@ const Projects = () => {
         dynamicHeight
         emulateTouch
         swipeScrollTolerance={10}
+        transitionTime={500}
         style={{ paddingTop: 100 }}
       >
         {projects.map((project) => (
@@ -66,8 +62,10 @@ const Projects = () => {
             style={{
               color: textColorPrimary,
               textAlign: "center",
-              padding: isMobile ? "50px 20px" : 10,
+              padding: isMobile ? "50px 20px" : "20px 0 50px 0",
               backgroundColor: bgColorDarker,
+              minHeight:550,
+              maxHeight:550,
             }}
           >
             <h1>{project.name}</h1>
@@ -75,13 +73,13 @@ const Projects = () => {
               <Row>
                 <Col md={4}>
                   <img
-                    style={{ width: isMobile ? "100%" : "50%", float: "right" }}
+                    style={{ width: isMobile ? "100%" : "90%", float: "right" }}
                     src={project.icon}
                     alt={project.name}
                   />
                 </Col>
                 <Col
-                  style={{ textAlign: "left", color: textColorSecondary }}
+                  style={{ textAlign: "left", color: textColorSecondary, paddingTop: isMobile?20:0 }}
                   md={8}
                 >
                   <p>
@@ -90,12 +88,12 @@ const Projects = () => {
                   </p>
                   <div style={{ padding: "0 0 15px 0" }}>
                     <span style={{ color: textColorPrimary }}>
-                      Technologies:
+                      Services:
                     </span>{" "}
-                    {project.technologies.map((tech, i) => (
+                    {project.services.map((tech, i) => (
                       <>
                         <span>{tech}</span>
-                        {i < project.technologies.length - 1 && (
+                        {i < project.services.length - 1 && (
                           <span> | </span>
                         )}
                       </>
@@ -105,12 +103,6 @@ const Projects = () => {
                     <span style={{ color: textColorPrimary }}>Category:</span>{" "}
                     <span>{project.category}</span>
                   </div>
-                  <Button onClick={() => reDirectTo(project.liveDemo)}>
-                    Demo
-                  </Button>{" "}
-                  <Button onClick={() => reDirectTo(project.repo)}>
-                    Repository
-                  </Button>
                 </Col>
               </Row>
             </div>
