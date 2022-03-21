@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a84e2a61f69f8ea12ddd9175bb7149ef",
+    "revision": "55a24dfc1827461327cc3002676d6873",
     "url": "/vasthusree/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vasthusree/static/css/2.ada51479.chunk.css"
   },
   {
-    "revision": "3934264eaee720acdf7c",
+    "revision": "0b9dd5bab372d336fa1e",
     "url": "/vasthusree/static/css/main.98178f2b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vasthusree/static/js/2.c5eda877.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3934264eaee720acdf7c",
-    "url": "/vasthusree/static/js/main.59f8f619.chunk.js"
+    "revision": "0b9dd5bab372d336fa1e",
+    "url": "/vasthusree/static/js/main.4e565d41.chunk.js"
   },
   {
     "revision": "f9402b2141371cb0ee0f",
